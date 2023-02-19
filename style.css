@@ -1,0 +1,299 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --pinkCol: #c73c75;
+    --dark: #2c2f36;
+    --blueTran: #1378af9a;
+}
+
+#block-1 {
+    background-color: var(--dark);
+    z-index: -1;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo .head {
+    z-index: -1;
+    width: 8rem;
+    position: relative;
+}
+
+.logo .head h1:nth-child(2) {
+    position: absolute;
+    top: 0.87rem;
+    left: 0.4rem;
+    z-index: -1;
+    float: left;
+}
+
+.logo .head h1:nth-child(3) {
+    text-align: right;
+}
+
+.logo .head span {
+    color: var(--pinkCol);
+    z-index: 1;
+    font-weight: 900;
+    font-size: 2rem;
+}
+
+.logo .sub-head {
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+#block-2 .block-add address {
+    font-weight: 600;
+    line-height: 20px;
+}
+
+#block-2 .block-add {
+    margin: 1rem 3.8rem;
+}
+
+#main-section-1 {
+    background-image: url('./assets/background-img.avif');
+    width: 98.6vw;
+    height: 100vh;
+    background-size: cover;
+}
+
+#img-block-1 {
+    background-color: var(--blueTran);
+}
+
+.block-txt .head {
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.block-txt {
+    margin: 5rem 5rem;
+}
+
+.block-txt .head div {
+    background-color: white;
+    margin-top: 1rem;
+    padding: 0.3rem;
+    width: 7rem;
+}
+
+.block-txt .body {
+    margin-top: 1rem;
+
+}
+
+.block-txt .body h1 {
+    font-size: 10rem;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.356);
+}
+
+.block-txt .body h3 {
+    position: absolute;
+    top: 5rem;
+    left: 0.4rem;
+    font-size: 4rem;
+    color: white;
+    font-weight: 800;
+}
+
+.block-txt .body h3 span {
+    padding: 0.8rem 0.8rem;
+    margin: 0px 20px;
+    font-size: 0.1rem;
+    background-color: var(--pinkCol);
+}
+
+#seconde-sec {
+    display: flex;
+    flex-direction: column;
+}
+
+#pink-sec {
+    background-color: #c93a76bd;
+    padding: 100px;
+    height: 100vh;
+}
+
+
+#cards .card img {
+    width: 10em;
+}
+
+@media screen and (min-width: 2500px) {
+    .logo .head {
+        width: 17rem;
+    }
+
+    #main-section-1 {
+        width: 100vw;
+    }
+
+    .block-txt .head h3 {
+        font-size: 5rem;
+    }
+
+    #block-2 .block-add h3,
+    #block-2 .block-add h5 {
+        margin: 10px 0px;
+        font-size: 2rem;
+    }
+
+    #block-2 .block-add address {
+        font-size: 2rem;
+        line-height: 40px;
+    }
+
+    .logo .head span {
+        z-index: 1;
+        font-weight: 900;
+        font-size: 5rem;
+    }
+
+    .logo .sub-head {
+        font-size: 2rem;
+        font-weight: 700;
+        letter-spacing: 1px;
+    }
+
+    .logo .head h1:nth-child(2) {
+        position: absolute;
+        top: 2.7rem;
+        left: 1.1rem;
+        z-index: -1;
+        float: left;
+        font-size: 5rem;
+    }
+
+    .logo .head h1:nth-child(3) {
+        font-size: 5rem;
+    }
+
+    .block-txt .body h1 {
+        font-size: 17rem;
+    }
+
+    .block-txt .body h3 {
+        top: 7rem;
+        font-size: 10rem;
+    }
+
+    .block-txt .body h3 span {
+        padding: 0.4rem 0.4rem;
+        margin: 0px 10px;
+        font-size: 0rem;
+        background-color: var(--pinkCol);
+    }
+
+}
+
+@media screen and (max-width: 1200px) {
+    .block-txt .body h1 {
+        font-size: 5rem;
+    }
+
+    .block-txt .body h3 {
+        top: 2rem;
+        font-size: 2rem;
+    }
+
+    .block-txt .body h3 span {
+        padding: 0.4rem 0.4rem;
+        margin: 0px 10px;
+        font-size: 0rem;
+        background-color: var(--pinkCol);
+    }
+
+
+}
+
+@media screen and (max-width: 998px) {
+    .block-txt {
+        margin: 2rem 2rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    #main-section-1 {
+        height: 60vh;
+    }
+
+    /*  Address of the header */
+    #block-2 .block-add {
+        margin: 2rem 1.8rem;
+    }
+
+
+    .block-txt {
+        margin: 1rem 1rem;
+    }
+
+    .block-txt .body h1 {
+        font-size: 5rem;
+    }
+
+    .block-txt .body h3 {
+        top: 2.6rem;
+        font-size: 2rem;
+    }
+
+    .block-txt .body h3 span {
+        padding: 0.5rem 0.5rem;
+        margin: 0px 10px;
+        font-size: 0rem;
+        background-color: var(--pinkCol);
+    }
+
+    #img-block-2 {
+        display: none;
+    }
+
+    #pink-sec {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 556px) {
+    #main-section-1 {
+        width: 100vw;
+    }
+
+    /* Address of the header */
+    #block-2 .block-add {
+        margin: 2rem 0rem;
+    }
+
+    .block-txt .body h1 {
+        font-size: 3.5rem;
+    }
+
+    .block-txt .body h3 {
+        top: 1.6rem;
+        font-size: 2rem;
+    }
+
+    .block-txt .body h3 span {
+        padding: 0.2rem 0.2rem;
+        margin: 0px 5px;
+        font-size: 0rem;
+        background-color: var(--pinkCol);
+    }
+
+    .About-us {
+        margin: 0px 20px;
+    }
+}
