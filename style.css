@@ -1,3 +1,5 @@
+@import url('//db.onlinewebfonts.com/c/8cdbb48678e4418f22a2f507c2b975bd?family=Blanka');
+
 * {
     margin: 0px;
     padding: 0px;
@@ -5,9 +7,10 @@
 }
 
 :root {
-    --pinkCol: #c73c75;
+    --pinkCol: #db0a61;
     --dark: #2c2f36;
     --blueTran: #1378af9a;
+    --grayBcak: #f8f8f8;
 }
 
 #block-1 {
@@ -24,13 +27,14 @@
 
 .logo .head {
     z-index: -1;
-    width: 8rem;
+    width: 10rem;
+    font-family: "Blanka";
     position: relative;
 }
 
 .logo .head h1:nth-child(2) {
     position: absolute;
-    top: 0.87rem;
+    top: 1.76rem;
     left: 0.4rem;
     z-index: -1;
     float: left;
@@ -44,7 +48,7 @@
     color: var(--pinkCol);
     z-index: 1;
     font-weight: 900;
-    font-size: 2rem;
+    font-size: 2.7rem;
 }
 
 .logo .sub-head {
@@ -64,7 +68,7 @@
 
 #main-section-1 {
     background-image: url('./assets/background-img.avif');
-    width: 98.7vw;
+    width: 100vw;
     height: 46rem;
     background-size: cover;
 }
@@ -85,6 +89,11 @@
 
 .block-txt {
     margin: 5rem 5rem;
+}
+
+#blank-space {
+    background-color: #b61a1a;
+
 }
 
 .block-txt .head div {
@@ -177,8 +186,8 @@ p.card-text {
 #cards .box:nth-child(3):before {
     content: '';
     position: relative;
-    padding: 4rem 1px;
-    top: 10rem;
+    padding: 6rem 1px;
+    top: 14rem;
     width: 2px;
     height: 2rem;
     border-radius: 100px;
@@ -186,7 +195,7 @@ p.card-text {
 }
 
 .About-us p {
-    font-size: 1.7rem;
+    font-size: 1rem;
     font-style: italic;
     font-weight: 600;
 }
@@ -194,6 +203,34 @@ p.card-text {
 p.card-text {
     text-align: justify;
     font-size: 1.2rem;
+}
+
+#boxofcontainerFluid {
+    background-color: var(--grayBcak);
+}
+
+
+#section {
+    margin: 0px 8vw;
+    padding: 1vw 1vw;
+}
+
+
+#section1 .About-us {
+    margin: 0px 10vw;
+    padding: 1vw 1vw;
+}
+
+#white-box {
+    padding: 10px;
+    position: relative;
+    bottom: 0px;
+    background-color: var(--grayBcak);
+}
+
+#between {
+    height: 100vh;
+    padding: 16.16rem 0rem;
 }
 
 @media screen and (min-width: 2000px) {
@@ -213,6 +250,14 @@ p.card-text {
 
     .block-txt .head h3 {
         font-size: 5rem;
+    }
+
+    #block-2 {
+        position: inherit;
+    }
+
+    div#block-3 {
+        background: #80808024;
     }
 
     #block-2 .block-add h3,
