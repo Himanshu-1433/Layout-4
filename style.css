@@ -45,7 +45,7 @@ body {
 :root {
     --pinkCol: #db0a61;
     --dark: #2c2f36;
-    --blueTran: #1378af9a;
+    --blueTran: #00a5ff96;
     --grayBcak: #f8f8f8;
     --fontFamily: 'Poppins', sans-serif;
 }
@@ -75,6 +75,7 @@ body {
     left: 0.9rem;
     z-index: -1;
     float: left;
+    text-transform: none;
 }
 
 .logo .head h1:nth-child(3) {
@@ -173,7 +174,8 @@ body {
 }
 
 #pink-sec {
-    background-color: #c93a76bd;
+    
+    background-color: #e91d72a6;
     padding: 100px;
     height: 100vh;
 }
