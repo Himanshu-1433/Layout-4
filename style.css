@@ -174,7 +174,7 @@ body {
 }
 
 #pink-sec {
-    
+
     background-color: #e91d72a6;
     padding: 100px;
     height: 100vh;
@@ -274,7 +274,6 @@ p.card-text {
 }
 
 @media screen and (min-width: 2000px) {
-
     #between {
         height: 100vh;
         padding: 19.56rem 0rem;
@@ -434,6 +433,10 @@ p.card-text {
         height: 40vh;
     }
 
+    .About-us p {
+        font-size: 0.8rem;
+    }
+
     #img-block-1 {
         height: 100%;
     }
@@ -518,40 +521,40 @@ p.card-text {
 
 @media screen and (max-width: 556px) {
     #main-section-1 {
-        width: 100vw;
-        height: 50vh;
+        width: 97vw;
+        height: 48vh;
     }
 
-    /* Address of the header */
-    #block-2 .block-add {
-        margin: 2rem 0rem;
-    }
+/* Address of the header */
+#block-2 .block-add {
+    margin: 2rem 0rem;
+}
 
-    .block-txt .body h1 {
-        font-size: 3.5rem;
-    }
+.block-txt .body h1 {
+    font-size: 3.5rem;
+}
 
-    .block-txt .body h3 {
-        top: 1.6rem;
-        font-size: 2rem;
-    }
+.block-txt .body h3 {
+    top: 1.6rem;
+    font-size: 2rem;
+}
 
-    .block-txt .body h3 span {
-        padding: 0.2rem 0.2rem;
-        margin: 0px 5px;
-        font-size: 0rem;
-        background-color: var(--pinkCol);
-    }
+.block-txt .body h3 span {
+    padding: 0.2rem 0.2rem;
+    margin: 0px 5px;
+    font-size: 0rem;
+    background-color: var(--pinkCol);
+}
 
-    .About-us {
-        margin: 0px 20px;
-    }
+.About-us {
+    margin: 0px 20px;
+}
 }
 
 @media screen and (max-width: 396px) {
     #main-section-1 {
-        width: 100vw;
-        height: 43vh;
+        width: 97vw;
+        height: 50vh;
     }
 
     /* Address of the header */
