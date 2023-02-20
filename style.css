@@ -1,9 +1,40 @@
 @import url('//db.onlinewebfonts.com/c/8cdbb48678e4418f22a2f507c2b975bd?family=Blanka');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: var(--fontFamily);
+}
+
+body {
+    border: 5px solid gray;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px white;
+    border-radius: 100px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    animation: colorChange;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    transition: 1s;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(to right, rgb(240, 128, 128) 0%, rgb(129, 98, 119) 100%);
 }
 
 :root {
@@ -11,6 +42,8 @@
     --dark: #2c2f36;
     --blueTran: #1378af9a;
     --grayBcak: #f8f8f8;
+    --fontFamily: 'Poppins', sans-serif;
+    ;
 }
 
 #block-1 {
@@ -34,8 +67,8 @@
 
 .logo .head h1:nth-child(2) {
     position: absolute;
-    top: 1.76rem;
-    left: 0.4rem;
+    top: 0.79rem;
+    left: 0.9rem;
     z-index: -1;
     float: left;
 }
@@ -57,6 +90,11 @@
     letter-spacing: 1px;
 }
 
+
+#block-2 {
+    background-image: linear-gradient(to right, white 0%, white 40%, #f8f8f8 40%, #f8f8f8 100%);
+}
+
 #block-2 .block-add address {
     font-weight: 600;
     line-height: 20px;
@@ -68,7 +106,7 @@
 
 #main-section-1 {
     background-image: url('./assets/background-img.avif');
-    width: 100vw;
+    width: 99.5vw;
     height: 46rem;
     background-size: cover;
 }
@@ -91,10 +129,6 @@
     margin: 5rem 5rem;
 }
 
-#blank-space {
-    background-color: #b61a1a;
-
-}
 
 .block-txt .head div {
     background-color: white;
@@ -235,6 +269,11 @@ p.card-text {
 
 @media screen and (min-width: 2000px) {
 
+    #between {
+        height: 100vh;
+        padding: 19.56rem 0rem;
+    }
+
     #section {
         margin: 0px 20rem;
     }
@@ -363,6 +402,10 @@ p.card-text {
         font-size: 8rem;
     }
 
+    #img-block-1 {
+        background-color: var(--blueTran);
+    }
+
     .block-txt .body h3 {
         top: 4rem;
         font-size: 4rem;
@@ -382,7 +425,15 @@ p.card-text {
 
     #main-section-1 {
         width: 100vw;
-        height: 100vh;
+        height: 40vh;
+    }
+
+    #img-block-1 {
+        height: 100%;
+    }
+
+    #img-block-1 {
+        background-color: var(--blueTran);
     }
 
     .block-txt {
@@ -410,7 +461,7 @@ p.card-text {
 
     #main-section-1 {
         width: 100vw;
-        height: 100vh;
+        height: 60vh;
     }
 
     /*  Address of the header */
