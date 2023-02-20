@@ -64,13 +64,17 @@
 
 #main-section-1 {
     background-image: url('./assets/background-img.avif');
-    width: 98.6vw;
-    height: 100vh;
+    width: 98.7vw;
+    height: 46rem;
     background-size: cover;
 }
 
 #img-block-1 {
     background-color: var(--blueTran);
+}
+
+.head {
+    margin-left: 10px;
 }
 
 .block-txt .head {
@@ -92,11 +96,10 @@
 
 .block-txt .body {
     margin-top: 1rem;
-
 }
 
 .block-txt .body h1 {
-    font-size: 10rem;
+    font-size: 11rem;
     font-weight: 700;
     color: rgba(255, 255, 255, 0.356);
 }
@@ -105,7 +108,7 @@
     position: absolute;
     top: 5rem;
     left: 0.4rem;
-    font-size: 4rem;
+    font-size: 5rem;
     color: white;
     font-weight: 800;
 }
@@ -128,20 +131,84 @@
     height: 100vh;
 }
 
-
-#cards .card img {
-    width: 10em;
+#cards .card {
+    width: 100%;
+    margin: 0px 10px;
+    border: none;
 }
 
-#cards .card 
+#cards .card img {
+    width: 8em;
+}
 
-@media screen and (min-width: 2500px) {
+h6.card-subtitle {
+    color: var(--pinkCol);
+    font-size: 1.6rem;
+}
+
+h5.card-title {
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+p.card-text {
+    font-weight: 600;
+}
+
+#cards .card .card-body span {
+    font-size: 5px;
+    margin: 0px 10px;
+    padding: 1px 10px;
+    background-color: var(--pinkCol);
+}
+
+#cards .box:nth-child(1):before {
+    content: '';
+    position: relative;
+    padding: 4rem 1px;
+    top: 10rem;
+    width: 2px;
+    height: 2rem;
+    border-radius: 100px;
+    background-color: rgba(255, 255, 255, 0.479);
+}
+
+#cards .box:nth-child(2):before,
+#cards .box:nth-child(3):before {
+    content: '';
+    position: relative;
+    padding: 4rem 1px;
+    top: 10rem;
+    width: 2px;
+    height: 2rem;
+    border-radius: 100px;
+    background-color: rgba(128, 128, 128, 0.479);
+}
+
+.About-us p {
+    font-size: 1.7rem;
+    font-style: italic;
+    font-weight: 600;
+}
+
+p.card-text {
+    text-align: justify;
+    font-size: 1.2rem;
+}
+
+@media screen and (min-width: 2000px) {
+
+    #section {
+        margin: 0px 20rem;
+    }
+
     .logo .head {
         width: 17rem;
     }
 
     #main-section-1 {
         width: 100vw;
+        height: 100vh;
     }
 
     .block-txt .head h3 {
@@ -200,16 +267,60 @@
         background-color: var(--pinkCol);
     }
 
+    #About-content h2 {
+        font-size: 3.4rem;
+    }
+
+    #cards .card img {
+        width: 15em;
+    }
+
+    h5.card-title {
+        font-size: 3rem;
+    }
+
+    h6.card-subtitle {
+        font-size: 2.6rem;
+    }
+
+    p.card-text {
+        font-size: 2rem;
+    }
+
+    .About-us p {
+        font-size: 1.7rem;
+    }
+
+    #footer h4 {
+        font-size: 3rem;
+    }
+
+
+    #cards .box:nth-child(2):before,
+    #cards .box:nth-child(3):before {
+        content: '';
+        position: relative;
+        padding: 10rem 2px;
+        top: 20rem;
+        width: 2px;
+        height: 2rem;
+        border-radius: 100px;
+        background-color: rgba(128, 128, 128, 0.479);
+    }
+
+    #pink-sec {
+        padding: 15rem;
+    }
 }
 
 @media screen and (max-width: 1200px) {
     .block-txt .body h1 {
-        font-size: 5rem;
+        font-size: 8rem;
     }
 
     .block-txt .body h3 {
-        top: 2rem;
-        font-size: 2rem;
+        top: 4rem;
+        font-size: 4rem;
     }
 
     .block-txt .body h3 span {
@@ -223,15 +334,38 @@
 }
 
 @media screen and (max-width: 998px) {
+
+    #main-section-1 {
+        width: 100vw;
+        height: 100vh;
+    }
+
     .block-txt {
         margin: 2rem 2rem;
+    }
+
+    .block-txt .body h1 {
+        font-size: 6rem;
+    }
+
+    .block-txt .body h3 {
+        top: 3rem;
+        font-size: 3rem;
+    }
+
+    .block-txt .body h3 span {
+        padding: 0.4rem 0.4rem;
+        margin: 0px 10px;
+        font-size: 0rem;
+        background-color: var(--pinkCol);
     }
 }
 
 @media screen and (max-width: 768px) {
 
     #main-section-1 {
-        height: 60vh;
+        width: 100vw;
+        height: 100vh;
     }
 
     /*  Address of the header */
@@ -267,11 +401,23 @@
     #pink-sec {
         display: none;
     }
+
+    #cards .box:nth-child(1):before {
+        content: '';
+        position: relative;
+        padding: 4rem 1px;
+        top: 10rem;
+        width: 2px;
+        height: 2rem;
+        border-radius: 100px;
+        background-color: rgba(128, 128, 128, 0.479);
+    }
 }
 
 @media screen and (max-width: 556px) {
     #main-section-1 {
         width: 100vw;
+        height: 50vh;
     }
 
     /* Address of the header */
@@ -297,5 +443,70 @@
 
     .About-us {
         margin: 0px 20px;
+    }
+}
+
+@media screen and (max-width: 396px) {
+    #main-section-1 {
+        width: 100vw;
+        height: 43vh;
+    }
+
+    /* Address of the header */
+    #block-2 .block-add {
+        margin: 2rem 0rem;
+    }
+
+    #block-2 .block-add h3 {
+        font-size: 1.4rem;
+    }
+
+    #block-2 .block-add h5 {
+        font-size: 1rem;
+    }
+
+    .block-txt .body h1 {
+        font-size: 3.6rem;
+    }
+
+    .block-txt .body h3 {
+        top: 1.9rem;
+        font-size: 1.5rem;
+    }
+
+    .block-txt .body h3 span {
+        padding: 0.2rem 0.2rem;
+        margin: 0px 5px;
+        font-size: 0rem;
+        background-color: var(--pinkCol);
+    }
+
+    .block-txt .head h1 {
+        font-size: 1.7rem;
+    }
+
+    .block-txt .head {
+        padding: 0.2rem;
+    }
+
+
+    .About-us {
+        margin: 0px 20px;
+    }
+
+    .About-us h2 {
+        font-size: 1.4rem;
+    }
+
+    h5.card-title {
+        font-size: 1.5rem;
+    }
+
+    h6.card-subtitle {
+        font-size: 1.3rem;
+    }
+
+    p.card-text {
+        font-size: 1rem;
     }
 }
