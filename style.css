@@ -1,6 +1,11 @@
 @import url('//db.onlinewebfonts.com/c/8cdbb48678e4418f22a2f507c2b975bd?family=Blanka');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
+@font-face {
+    font-family: Blanka;
+    src: url('./Blanka-Regular.otf');
+}
+
 * {
     margin: 0px;
     padding: 0px;
@@ -43,7 +48,6 @@ body {
     --blueTran: #1378af9a;
     --grayBcak: #f8f8f8;
     --fontFamily: 'Poppins', sans-serif;
-    ;
 }
 
 #block-1 {
@@ -61,7 +65,7 @@ body {
 .logo .head {
     z-index: -1;
     width: 10rem;
-    font-family: "Blanka";
+    font-family: Blanka;
     position: relative;
 }
 
@@ -245,7 +249,7 @@ p.card-text {
 
 
 #section {
-    margin: 0px 8vw;
+    margin: 0px 0vw;
     padding: 1vw 1vw;
 }
 
