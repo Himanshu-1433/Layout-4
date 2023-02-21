@@ -234,6 +234,19 @@ p.card-text {
     background-color: rgba(128, 128, 128, 0.479);
 }
 
+#section1 .About-us {
+    margin: 0px 5vw;
+    padding: 1vw 0vw;
+}
+
+#section1 .About-us h2 {
+    font-size: 2.9rem;
+}
+
+#section1 .About-us h2:nth-child(3) {
+    font-weight: 300;
+}
+
 .About-us p {
     font-size: 1rem;
     font-style: italic;
@@ -276,7 +289,7 @@ p.card-text {
 @media screen and (min-width: 2000px) {
     #between {
         height: 100vh;
-        padding: 19.56rem 0rem;
+        padding: 21.1rem 0rem;
     }
 
     #section {
@@ -357,7 +370,7 @@ p.card-text {
     }
 
     #About-content h2 {
-        font-size: 3.4rem;
+        font-size: 4.4rem;
     }
 
     #cards .card img {
@@ -407,6 +420,15 @@ p.card-text {
         font-size: 8rem;
     }
 
+    #section1 .About-us {
+        margin: 0px 5vw;
+        padding: 1vw 0vw;
+    }
+
+    #section1 .About-us h2 {
+        font-size: 1.4rem;
+    }
+
     #img-block-1 {
         background-color: var(--blueTran);
     }
@@ -430,7 +452,16 @@ p.card-text {
 
     #main-section-1 {
         width: 100vw;
-        height: 40vh;
+        height: 70vh;
+    }
+
+    #section1 .About-us {
+        margin: 0px 5vw;
+        padding: 1vw 0vw;
+    }
+
+    #section1 .About-us h2 {
+        font-size: 1.4rem;
     }
 
     .About-us p {
@@ -530,36 +561,46 @@ p.card-text {
         height: 48vh;
     }
 
-/* Address of the header */
-#block-2 .block-add {
-    margin: 2rem 0rem;
-}
+    .About-us p {
+        font-size: 1rem;
+        margin: 0rem 1rem;
+    }
 
-.block-txt .body h1 {
-    font-size: 3.5rem;
-}
+    /* Address of the header */
+    #block-2 .block-add {
+        margin: 2rem 0rem;
+    }
 
-.block-txt .body h3 {
-    top: 1.6rem;
-    font-size: 2rem;
-}
+    .block-txt .body h1 {
+        font-size: 3.5rem;
+    }
 
-.block-txt .body h3 span {
-    padding: 0.2rem 0.2rem;
-    margin: 0px 5px;
-    font-size: 0rem;
-    background-color: var(--pinkCol);
-}
+    .block-txt .body h3 {
+        top: 1.6rem;
+        font-size: 2rem;
+    }
 
-.About-us {
-    margin: 0px 20px;
-}
+    .block-txt .body h3 span {
+        padding: 0.2rem 0.2rem;
+        margin: 0px 5px;
+        font-size: 0rem;
+        background-color: var(--pinkCol);
+    }
+
+    .About-us {
+        margin: 0px 20px;
+    }
 }
 
 @media screen and (max-width: 396px) {
     #main-section-1 {
         width: 97vw;
         height: 50vh;
+    }
+
+    .About-us p {
+        font-size: 1rem;
+        margin: 0rem 0rem;
     }
 
     /* Address of the header */
