@@ -71,7 +71,7 @@ body {
 
 .logo .head h1:nth-child(2) {
     position: absolute;
-    top: 0.79rem;
+    top: 0.80rem;
     left: 0.9rem;
     z-index: -1;
     float: left;
@@ -469,7 +469,7 @@ p.card-text {
 @media screen and (max-width: 768px) {
 
     #main-section-1 {
-        width: 100vw;
+        width: 98.5vw;
         height: 60vh;
     }
 
@@ -516,6 +516,11 @@ p.card-text {
         height: 2rem;
         border-radius: 100px;
         background-color: rgba(128, 128, 128, 0.479);
+    }
+
+    .About-us p {
+        font-size: 1rem;
+        margin: 0rem 4rem;
     }
 }
 
