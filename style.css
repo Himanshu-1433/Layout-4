@@ -507,6 +507,10 @@ p.card-text {
         width: 98.5vw;
         height: 60vh;
     }
+    
+    #white-box {
+        display: none;
+    }
 
     /*  Address of the header */
     #block-2 .block-add {
