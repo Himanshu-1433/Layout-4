@@ -240,7 +240,7 @@ p.card-text {
 }
 
 #section1 .About-us h2 {
-    font-size: 2.9rem;
+    font-size: 1.5rem;
 }
 
 #section1 .About-us h2:nth-child(3) {
@@ -294,6 +294,10 @@ p.card-text {
 
     #section {
         margin: 0px 20rem;
+    }
+
+    #section1 .About-us h2 {
+        font-size: 2.9rem;
     }
 
     .logo .head {
